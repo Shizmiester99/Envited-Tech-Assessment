@@ -1,0 +1,237 @@
+:root {
+    /* Primary Palette */
+    --purpledark: #240D57;
+    --purplelight: #501FC1;
+    --grad1: #8456EC; 
+    --grad2: #E87BF8;
+
+    /* Secondary Purples */
+    --secondpdark: #CCB6FF;
+    --secondplight: #EDE5FF;
+
+    /* Neutrals */
+    --darkergrey: #4F4F4F;
+    --darkgrey: #828282;
+    --grey: #BDBDBD;
+    --lightgrey: #E0E0E0;
+    --lightergrey: #F2F2F2;
+    --white: #BDBDBD;
+    --background:rgb(250, 245, 255);
+}   
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+}
+
+h1 {
+    color: var(--purpledark);
+}
+
+p {
+    color: var(--darkergrey);
+}
+
+button {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/***** Home Page *****/
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading */
+.heading {
+    width: 321px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0 2em 0;
+
+}
+
+/* Snapchat heading */
+.headingSpecial {
+    background: linear-gradient(to right, #8456EC , #E87BF8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.homeStatement {
+    width: 321px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.imgHome {
+    width: 165.63px;
+    border-radius: 5px;
+    /* enable for other browsers */
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    width: 187px;
+    margin: 2em 0 2em 0;
+    color: white;
+    background-image: linear-gradient(to right, #8456EC , #E87BF8);
+    
+}
+
+/*****  Create Page *****/
+
+.create {
+    display: flex;
+    flex-direction: column;
+}
+
+.createHeading {
+    margin: 1em 0 1em 0;
+    text-align: center;
+    
+}
+
+.your {
+    color: var(--purplelight);
+}
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formInput {
+    background-color: var(--background);
+    gap: 10px;
+    margin: 1em 0 1em 0;
+    padding: 10px;
+    width: 80%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.formImage {
+    background: linear-gradient(to right, #7d7b82 , #969696);
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.imageLabel {
+    padding-right: 1em;
+    color: white;
+}
+
+
+/***** Event Page *****/
+
+.event {
+    display: flex;
+    flex-direction: column;
+}
+
+.birthday {
+    width: 375px;
+    left: 375px;
+}
+
+.eventtitle {
+    margin: 0.5em 0 0.2em 10px;
+}
+
+.host {
+    margin: 0 2em 0.5em 10px;
+    color: var(--darkgrey);
+}
+
+.details {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconAndInfo{
+    display: flex;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    margin-left: 0.5em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1em;
+}
+
+.next {
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.purple {
+    color: var(--purpledark);
+}
+
+.spacing {
+    height: 5em;
+}
+
+
+
+/* Animation for CREATE "Your" */
+
+.wave h1 {
+    display: inline-block;
+    animation: wave 3s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+}
+
+@keyframes wave {
+    0%,40%,100% {
+    transform: translateY(0)
+    }
+    20% {
+    transform: translateY(-5px)
+    }
+}
